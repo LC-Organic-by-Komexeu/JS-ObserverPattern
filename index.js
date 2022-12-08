@@ -32,5 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
             element: e,
             transform: window.LC.StoreTransform[transform]
         })
+
+        e.addEventListener('input', (event) => {
+            Reflect.set(window.LC.Store, key, event.currentTarget.value)
+        })
     })
 });
