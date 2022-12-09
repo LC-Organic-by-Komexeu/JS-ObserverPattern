@@ -53,16 +53,30 @@
                     <label for="Tel1">Tel</label>
                 </div>
             </div>        
-        </div>
-        <div class="row mb-5">
             <div class="col-6">
                 <div class="form-floating">
                     <input type="username" class="form-control" id="Username1" placeholder="Username" data-bind="Username">
                     <label for="Username1">Username</label>
                 </div>
             </div>
+        </div>
+        <div class="row mb-5">
             <div class="col-6">
-                                
+                <div class="form-floating">
+                    <select class="form-select" id="CitySelect" aria-label="城市" data-bind="Info.City">
+                        <option selected>請選擇</option>
+                        <option value="Taipei">臺北市</option>
+                        <option value="Kaohsiung">高雄市</option>
+                        <option value="Taichung">臺中市</option>
+                    </select>
+                    <label for="CitySelect">城市</label>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="請輸入地址" id="Address" data-bind="Info.Address"></textarea>
+                    <label for="Address">地址</label>
+                  </div>
             </div>
         </div>
     </div>
